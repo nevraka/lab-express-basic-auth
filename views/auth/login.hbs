@@ -1,0 +1,14 @@
+<form method='POST' action='/login'>
+  <label>User Name</label>
+  <input type='username' name='email' placeholder='Enter your username' />
+
+  <label>Password</label>
+  <input type='password' name='password' placeholder='Enter your Password' />
+  <button>Sign In</button>
+</form>
+
+{{#if error}}
+
+  <p class='error'>Message: {{error}}</p>
+
+{{/if}}
